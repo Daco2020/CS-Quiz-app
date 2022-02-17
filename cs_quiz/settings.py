@@ -88,7 +88,7 @@ WSGI_APPLICATION = "cs_quiz.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "awesome27",  # 데이터베이스를 생성 후 이름을 넣어주세요.
+        "NAME": "cs_quiz",  # 데이터베이스를 생성 후 이름을 넣어주세요.
         "USER": os.environ["USER"],
         "PASSWORD": os.environ["PASSWORD"],
         "HOST": os.environ["HOST"],
@@ -122,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Seoul"
 
 USE_I18N = True
 
