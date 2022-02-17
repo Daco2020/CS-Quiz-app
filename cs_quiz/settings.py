@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "corsheaders",
     "rest_framework",
-    "project_name.apps.users",
-    "project_name.apps.quiz",
+    "cs_quiz.apps.users",
+    "cs_quiz.apps.quiz",
 ]
 
 MIDDLEWARE = [
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-ROOT_URLCONF = "project_name.urls"
+ROOT_URLCONF = "cs_quiz.urls"
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "project_name.wsgi.application"
+WSGI_APPLICATION = "cs_quiz.wsgi.application"
 
 
 # Database
