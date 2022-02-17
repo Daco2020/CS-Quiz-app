@@ -365,3 +365,5 @@ zsdoc/data
 db_uploader.py
 config.py
 .csv
+.vscode
+vscode
