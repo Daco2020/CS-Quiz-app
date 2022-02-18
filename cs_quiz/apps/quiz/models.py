@@ -38,7 +38,7 @@ class Quiz(models.Model):
 
 class Answer(TimeStampModel):
     quiz = models.ForeignKey('Quiz', on_delete=models.CASCADE)
-    reference_url = models.URLField(null=True)
+    reference_url = models.URLField(null=True, blank=True)
     content = models.CharField(max_length=500)
     correct_point = models.IntegerField(default=0)
     
