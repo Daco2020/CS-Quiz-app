@@ -20,8 +20,7 @@ class AnswerCreateSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class AnswerListSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Answer
-        exclude = ['created_at', 'updated_at']
+class AnswerListSerializer(serializers.Serializer):
+    answers = serializers.ListField()
+    quiz = serializers.CharField(source='quiz.content')
 
