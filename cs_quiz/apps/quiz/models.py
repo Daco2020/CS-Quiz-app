@@ -8,7 +8,10 @@ class Category(models.Model):
 
     class Meta:
         db_table = 'categories'
-
+    
+    def __str__(self):
+        return self.content
+    
 
 class QuizTag(models.Model):
     quiz = models.ForeignKey('Quiz', on_delete=models.CASCADE)
@@ -24,6 +27,9 @@ class Tag(models.Model):
     
     class Meta:
         db_table = 'tags'
+    
+    def __str__(self):
+        return self.content       
 
         
 class Quiz(models.Model):
