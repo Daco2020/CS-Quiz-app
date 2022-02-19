@@ -44,6 +44,9 @@
 > 퀴즈의 전체 답변 수를 표기하여 유저들에게 더 많은 정보를 주고싶었음
 - models field에는 명시되어 있지 않기 때문에 Serialzer를 커스텀하여 count 필드를 추가 반환하였음.
 </br>
+![진행과정 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ef5baac1-dae7-4d6c-899d-2a9d8d0c3942/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220219%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220219T050255Z&X-Amz-Expires=86400&X-Amz-Signature=27fb6ef9d472a103aa3dc0393ba6673b08cbe3d699dd2c351444fc99c759a78b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+</br>
 
 ## API 명세 
 [포스트맨 다큐먼트 링크](https://documenter.getpostman.com/view/18513651/UVkiSdi1)
@@ -57,16 +60,19 @@
 </br>
 </br>
 
-## 추가 구현(예정)
+## 추가 진행(예정)
 
-- 마음에 드는 답변이 있다면 ‘맞아요’버튼을 누를 수 있다.
-- 틀린 답변이 있다면 ‘틀려요'버튼을 누르고 코멘트를 남길 수 있다.
-- 유저가 직접 CS 퀴즈를 추가할 수 있다. 
-- 유저는 본인이 답변한 퀴즈에 대해서 받지 않도록 선택 할 수 있다.
-- 유저는 자신이 푼 퀴즈를 볼 수 있다.
-- 유저는 자신이 푼 퀴즈를 다른 유저에게 퀴즈로 전달할 수 있다.
-- 유저는 다른 유저로부터 받은 퀴즈를 풀 수 있다.
-- 유저는 웹 서비스에 전반에 대한 피드백을 남길 수 있다.
+-[ ] Django templates을 이용한 프론트단 구현
+-[ ] 기존 코드 로직 점검 및 1차 리펙토링
+-[ ] unit test 진행
+-[ ] 마음에 드는 답변이 있다면 ‘맞아요’버튼을 누를 수 있다.
+-[ ] 틀린 답변이 있다면 ‘틀려요'버튼을 누르고 코멘트를 남길 수 있다.
+-[ ] 유저가 직접 CS 퀴즈를 추가할 수 있다. 
+-[ ] 유저는 본인이 답변한 퀴즈에 대해서 받지 않도록 선택 할 수 있다.
+-[ ] 유저는 자신이 푼 퀴즈를 볼 수 있다.
+-[ ] 유저는 자신이 푼 퀴즈를 다른 유저에게 퀴즈로 전달할 수 있다.
+-[ ] 유저는 다른 유저로부터 받은 퀴즈를 풀 수 있다.
+-[ ] 유저는 웹 서비스에 전반에 대한 피드백을 남길 수 있다.
 </br>
 
 ## 랭킹시스템(예정)
