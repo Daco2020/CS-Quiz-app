@@ -8,13 +8,13 @@
 </br>
 
 ## 목차
-[사용 기술](#사용-기술)
-[구현 기능](#구현-기능)
-[문제 해결 과정](#문제-해결-과정)
-[API 명세](#API-명세)
-[ERD](#ERD)
-[추가-구현(예정)](#추가-구현(예정))
-[랭킹시스템(예정)](#랭킹시스템(예정))
+[사용 기술](#사용-기술)</br>
+[구현 기능](#구현-기능)</br>
+[문제 해결 과정](#문제-해결-과정)</br>
+[API 명세](#API-명세)</br>
+[ERD](#ERD)</br>
+[추가-구현(예정)](#추가-구현(예정))</br>
+[랭킹시스템(예정)](#랭킹시스템(예정))</br>
 
 
 </br>
@@ -48,12 +48,12 @@
 ## API 명세 
 [포스트맨 다큐먼트 링크](https://documenter.getpostman.com/view/18513651/UVkiSdi1)
 </br>
+</br>
 
 
 ## ERD
 ![ERD 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f2bf078c-141d-417d-b6dd-a487b49dadb6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220219%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220219T045100Z&X-Amz-Expires=86400&X-Amz-Signature=289dab35d9e0710e9cf1956927d988a92567b1f6029a214d883ba9cc5ea6f5a8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-</br>
 </br>
 </br>
 
