@@ -37,12 +37,12 @@
 
 
 ## 문제 해결 과정
-> GenericView와 Serialzer를 사용하면 클라이언트가 원하는 키값과 맞지 않는 경우가 있었음 (ex. '태그명'이 필요한데 '태그id'로 반환하는 경우)
-- Serialzer를 커스텀할 수 있는 방법을 찾아 키값 형태를 수정하였음.
+> GenericView와 serializer 사용하면 클라이언트가 원하는 키값과 맞지 않는 경우가 있었음 (ex. '태그명'이 필요한데 '태그id'로 반환하는 경우)
+- serializer 커스텀할 수 있는 방법을 찾아 키값 형태를 수정하였음.
 > 퀴즈의 답변들을 반환할 때, 해당 퀴즈 뿐만 아니라 전체 퀴즈의 답변들이 반환되는 문제가 있었음
-- Views에서 해당되는 퀴즈id의 값만 Serialzer하도록 커스텀 하였음.
-> 유저가 퀴즈를 선택하면 해당 퀴즈의 답변 수를 표기하여 유저들의 흥미를 유도하고 싶었음
-- models field에는 명시되어 있지 않기 때문에 Serialzer를 커스텀하여 count 필드를 추가 반환하였음.
+- Views에서 해당되는 퀴즈id의 값만 serializer 커스텀 하였음.
+> 유저가 퀴즈를 선택하면 해당 퀴즈의 답변 숫자를 표기하여 유저들의 흥미를 유도하고 싶었음
+- models field에는 명시되어 있지 않기 때문에 serializer 커스텀하여 count 필드를 추가 반환하였음.
 </br>
 
 ![진행과정 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ef5baac1-dae7-4d6c-899d-2a9d8d0c3942/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220219%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220219T050255Z&X-Amz-Expires=86400&X-Amz-Signature=27fb6ef9d472a103aa3dc0393ba6673b08cbe3d699dd2c351444fc99c759a78b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
