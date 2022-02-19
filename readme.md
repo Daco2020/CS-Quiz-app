@@ -45,7 +45,7 @@
 - models field에는 명시되어 있지 않기 때문에 Serialzer를 커스텀하여 count 필드를 추가 반환하였음.
 </br>
 ![진행과정 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ef5baac1-dae7-4d6c-899d-2a9d8d0c3942/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220219%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220219T050255Z&X-Amz-Expires=86400&X-Amz-Signature=27fb6ef9d472a103aa3dc0393ba6673b08cbe3d699dd2c351444fc99c759a78b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
-
+</br>
 </br>
 
 ## API 명세 
