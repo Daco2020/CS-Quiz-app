@@ -9,15 +9,22 @@ class QuizListView(generics.ListAPIView):
     serializer_class = QuizListSerializer
     
     def get_queryset(self):
-        quiz_list = list(Quiz.objects.all())
-        random.shuffle(quiz_list)
+        category = self.request.query_params.get('category')
+        level = self.request.query_params.get('level')
         
-        category = self.request.query_params.get('category', quiz_list[0].category)
-        level = self.request.query_params.get('level', quiz_list[0].level)
+        if category and level :
+            queryset = Quiz.objects.filter(category=category, level=level)
+        elif not category and not level :
+            queryset = Quiz.objects.all()
+        elif not category :
+            queryset = Quiz.objects.filter(level=level)
+        elif not level :
+            queryset = Quiz.objects.filter(category=category)
         
-        queryset = Quiz.objects.filter(category=category, level=level)
+        queryset = list(queryset)
+        random.shuffle(queryset)
 
-        return queryset
+        return queryset[:3]
 
 
 class QuizRetrieveView(generics.RetrieveAPIView):
