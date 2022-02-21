@@ -1,8 +1,17 @@
-from django.contrib.auth.models import User
-from rest_framework import viewsets
-from .serializers import UserSerializer
+from django.shortcuts import render
+from django.contrib import auth
+from rest_framework import views
 
 
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+class SignupView(views.APIView):
+    def post(self, request):
+        return render(request, 'login.html')
+
+class LoginView(views.APIView):
+    def get(self, request):
+        return render(request, 'login.html')
+    
+class LogoutView(views.APIView):
+    def post(self, request):
+        auth.logout(request)
+        return render(request, 'login.html')
