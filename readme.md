@@ -77,7 +77,7 @@
 
 ## 추가 진행(예정)
 
-- [ ] 유저 로그인 기능 구현
+- [x] 유저 로그인 기능 구현
 - [ ] Django templates을 이용한 프론트단 구현
 - [ ] 기존 코드 로직 점검 및 1차 리펙토링
 - [ ] unit test 진행
@@ -103,4 +103,5 @@
 
 ### 2022년
 
-2월 20일 : quiz > views > 'queryset'로직 내 불필요한 query요청 삭제 및 분기처리 추가</br>
+- 2월 20일 : quiz > views > 'queryset'로직 내 불필요한 query요청 삭제 및 분기처리 추가
+- 2월 21일 : django-allauth 라이브러리를 사용하여 소셜 로그인(google) 구현
