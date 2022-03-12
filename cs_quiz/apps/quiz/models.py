@@ -23,7 +23,7 @@ class QuizTag(models.Model):
 
 class Tag(models.Model):
     content = models.CharField(max_length=50)
-    quiz = models.ManyToManyField('Quiz', through=QuizTag, related_name="tags")
+
     
     class Meta:
         db_table = 'tags'

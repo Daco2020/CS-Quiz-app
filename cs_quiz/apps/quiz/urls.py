@@ -4,6 +4,7 @@ from .views import AnswerCreateView, AnswerListView, QuizListView, QuizRetrieveV
 
 # router = routers.DefaultRouter()
 # router.register(r"answer", AnswerCreateView)
+app_name = 'cs_quiz.apps.quiz'
 
 urlpatterns = [
     path("", QuizListView.as_view(), name="quiz-list"),
