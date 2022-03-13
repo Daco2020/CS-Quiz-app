@@ -9,6 +9,6 @@ app_name = 'cs_quiz.apps.quiz'
 urlpatterns = [
     path("", QuizListView.as_view(), name="quiz-list"),
     path("<int:pk>/", QuizRetrieveView.as_view(), name="quiz-retrieve"),
-    path("answer/", AnswerCreateView.as_view(), name="answer-create"),
+    path("answers/", AnswerCreateView.as_view(), name="answer-create"),
     path("<int:pk>/answers/", AnswerListView.as_view(), name="answer-list"),
 ]
